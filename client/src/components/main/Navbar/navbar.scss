@@ -1,0 +1,132 @@
+.navContainer {
+    background: transparent;
+    height: 80px;
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: all 0.2s ease-in-out;
+
+    &.scrollNav {
+        background: #ffffff;
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+    @media screen and (max-width: 960px) {
+        transition: 0.8 all ease-in-out;
+    }
+}
+
+.navContentContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px;
+    max-width: 1100px;
+}
+
+.logo {
+    color: #fff;
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 24px;
+
+    &.scrollNav {
+        color: #7f00ff;
+    }
+}
+
+.menuIcon {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
+
+        &.scrollNav {
+            color: #000;
+        }
+    }
+}
+
+.navMenuContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.navLink {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 0.9rem;
+    height: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+
+    &.scrollNav {
+        color: #000;
+    }
+
+    &.active {
+        border-bottom: 3px solid #33cfc6;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.disappearOnMobile {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.navButton {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.leftMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

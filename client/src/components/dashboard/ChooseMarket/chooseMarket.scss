@@ -1,0 +1,32 @@
+.marketContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    border: 1px solid #d4d4d4;
+    border-radius: 20px;
+    background: #fff;
+    transition: 0.2s all ease-in-out;
+
+    &:hover {
+        background: #f8fafc;
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+.marketName {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.marketLogo {
+    border-radius: 5px;
+}
+
+.marketContentContainer {
+    padding: 20px 10px;
+}

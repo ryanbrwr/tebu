@@ -1,0 +1,142 @@
+.footerContainer {
+    background-color: #ffffff;
+
+    &.purple {
+        background-color: #7f00ff;
+    }
+}
+
+.footerWrapper {
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto
+}
+
+.footerLinkContainer {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 820px) {
+        padding-top: 32px;
+    }
+}
+
+.footerLinkWrapper {
+    display: flex;
+
+    @media screen and (max-width: 820px) {
+        flex-direction: column;
+    }
+}
+
+.footerLinkItems {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+    color: #000;
+
+    @media screen and (max-width: 420px) {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+.footerLinkTitle {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #fff;
+
+    &.purple {
+        color: #fff;
+    }
+}
+
+.footerLink {
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+
+    &.purple {
+        color: #fff;
+    }
+
+    &:hover {
+        color: #000;
+        transition: 0.3s ease-out
+    }
+}
+
+.socialContainer {
+    max-width: 1000px;
+    width: 100%
+}
+
+.socialWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+
+    @media screen and (max-width: 820px) {
+        flex-direction: column;
+    }
+}
+
+.socialLogo {
+    color: #7f00ff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-weight: bold;
+
+    &.purple {
+        color: #fff;
+    }
+}
+
+.websiteRights {
+    color: #000;
+    margin-bottom: 16px;
+
+    &.purple {
+        color: #fff;
+    }
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.socialIconLink {
+    color: #000;
+    font-size: 24px;
+
+    &.purple{
+        color: #fff
+    }
+
+    &:hover {
+        color: #000
+    }
+}
+
+
+

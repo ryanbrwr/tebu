@@ -1,0 +1,52 @@
+.buyContainer {
+    width: 50%;
+    min-width: 500px;
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+    }
+}
+
+.buyCard {
+    width: 500px;
+    border-radius: 20px;
+    border: 1px solid #d4d4d4;
+    padding: 20px;
+    transition: 0.2s all ease-in-out;
+}
+
+.buyTitle {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.buyProgressContainer {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.buyProgressText {
+    font-size: 12px;
+    font-weight: bold;
+    color: #d4d4d4;
+    margin-right: 5px;
+    transition: 0.2s all ease-in-out;
+
+    &.active {
+        color: #7f00ff;
+        transition: 0.2s all ease-in-out;
+    }
+
+    &.clickable {
+        cursor: pointer;
+    }
+}
+
+.rightArrowIcon {
+    color: #d4d4d4;
+    font-size: 12px;
+    margin-right: 5px;
+}

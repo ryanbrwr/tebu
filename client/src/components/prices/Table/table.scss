@@ -1,0 +1,136 @@
+.tableContainer {
+    background: #7f00ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 1000px;
+    position: relative;
+    z-index: 1;
+}
+
+.tableWrapper {
+        z-index: 3;
+        width: 70%;
+        min-width: 768px;
+        max-width: 1200px;
+        height: 600px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #d4d4d4;
+        border-radius: 7px;
+        background: #ffffff;
+
+        @media screen and (max-width: 768px) {
+            min-width: 0px;
+            width: 100%
+        }
+}
+
+.table {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows:  50px 70px 70px 70px;
+    column-gap: 10px;
+    transition: 0.2s all ease-in-out
+}
+
+.tableHeader {
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    border-bottom: 0.5px solid #d4d4d4;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.tagContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    color: #616161;
+    font-size: 12px;
+
+    &.endRow {
+        padding-left: 30px
+    }
+
+    @media screen and (max-width: 768px){
+        &.noMobile {
+            display: none;
+        }
+        &.endMobile {
+            justify-content: flex-end;
+            padding-right: 30px;
+        }
+    }
+}
+
+.coinRow {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    // border-bottom: 0.5px solid #d4d4d4;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &:hover {
+        background-color: #d4d4d4;
+    }
+}
+
+.dataContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    color: #000;
+
+    &.endRow {
+        padding-left: 30px
+    }
+
+    @media screen and (max-width: 768px){
+        &.noMobile {
+            display: none;
+        }
+        &.endMobile {
+            justify-content: flex-end;
+            padding-right: 30px;
+        }
+    }
+}
+
+.coinName {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.coinTicker {
+    font-size: 14px;
+    font-weight: 600;
+    color: #616161
+}
+
+.loadingIcon {
+    height: 24;
+    width: 24;
+}
+
+.errorText {
+    font-size: 20px;
+    color: #616161
+}
